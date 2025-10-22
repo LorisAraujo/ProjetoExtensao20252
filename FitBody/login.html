@@ -1,11 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="/FitBody/assets/login.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <h1>ola mundo</h1>
+  <div class="container">
+    <div class="login-box">
+      <h1>Entrar</h1>
+      <form>
+        <div class="input-box">
+          <input type="text" placeholder="Usuário" required>
+          <i class='bx bxs-user'></i>
+        </div>
+        <div class="input-box">
+          <input type="password" placeholder="Senha" required>
+          <i class='bx bxs-lock-alt'></i>
+        </div>
+
+        <div class="options">
+          <label><input type="checkbox"> Lembrar de mim</label>
+          <a href="#">Esqueceu a senha?</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+        <div class="register">
+          <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
 </html>
