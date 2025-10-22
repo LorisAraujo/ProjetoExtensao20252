@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', Arial, sans-serif;
+
+}
+
+
+
+body {
+    background-image: url(../img/fundo.png);
+    background-size: cover; /* Ajusta para cobrir toda a tela */
+    background-position: center; /* Centraliza */
+    background-repeat: repeat-y; /*evita repetição */
+    height: 100vh; /* Faz o fundo ocupar a tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px;
+
+}
+
+.geral {
+    background-color: #ecfae5;
+    border-radius: 16px;
+    justify-content: center;
+    max-width: 1100px;
+    width: 100%;
+    padding: 30px 25px;
+    box-shadow: 0 2px 8px rgba(176, 219, 156);
+
+}
+
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+
+}
+
+header h1 {
+    font-size: 40px;
+    font-weight: 700; 
+    color: #412b6b; 
+
+}
+
+.container {
+    align-items: center;
+    border-color: #412b6b;
+
+}
+
+.card {
+    background-color:#ecfae5;
+
+
+}
+
+.card h2 {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    font-size: 28px;
+    color:#412b6b;
+    text-align: center;
+
+} 
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-size: 24px ;
+    font-weight: 12px;
+    color: #412b6b;
+
+}
+
+.tipo-de-treino {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px
+
+}
+
+.tipo {
+    display: flex;
+    align-items: center;
+    background-color: #ddf6d2;
+    border-radius: 18px;
+    padding: 16px;
+    cursor:pointer;
+    transition:0.2s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 2px 8px rgba(176, 219, 156);
+
+}
+
+.tipo:hover {
+    background-color: #b0db9c;
+    border-color: #412b6b;
+
+}
+
+.tipo i {
+    width: 32px;
+    height: 32px;
+    color: #ddf6d2;
+    margin-bottom: 8px;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.tipo.selecionado {
+    border-color: #b0db9c;
+    background-color: #ecfae5;
+
+}
+
+h3 {
+    color: #412b6b;
+
+}
+
+.tipo h3 {
+    font-size: 24px ;
+    font-weight: 12px;
+    color: #412b6b;
+
+}
+
+.tipo p {
+    font-size: 16px;
+    color: #412b6b;
+
+}
+
+.tag {
+    display: inline-block;
+    margin-top: 4px;
+    background-color: #412b6b;
+    color: #ecfae5 ;
+    padding: 2px 6px;
+    border-radius: 6px;
+    font-size: 0.8rem;
+
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 16px;
+    font-size: 14px;
+    margin-bottom: 10px;
+
+}
+
+textarea {
+    resize: none;
+    height: 60px;
+
+}
+
+button {
+    background-color: #412b6b;
+    color: #ddf6d2;
+    border: none;
+    padding: 10px;
+    border-radius: 16px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b0db9c;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border-bottom: 1px solid #412b6b;
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #ddf6d2;
+}
+
