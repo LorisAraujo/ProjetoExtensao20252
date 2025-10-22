@@ -79,6 +79,10 @@ h1 {
     text-align: center;
     margin-top: 25px;
   }
+  .button-container a{
+    text-decoration: none;
+    color: black;
+  }
   
   #botao {
     border: none;
