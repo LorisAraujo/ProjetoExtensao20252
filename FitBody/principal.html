@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitBody</title>
+    <link rel="stylesheet" href="./assets/principal.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+
+    <div class="geral">
+        <div class="container">
+            <header>
+                <h1>FitBody</h1>
+            </header>
+
+            <section class="card">
+                <h2>Registro do Treino</h2>
+
+                <h3>Tipo de treino </h3><br>
+                <div class="tipo-de-treino">
+
+                    <!-- Treino Aeróbico -->
+                    
+                    <div class="tipo" data-tipo="Aeróbico">
+                        <div>
+                            <i data-lucide="activity"></i>
+                            <h3>Aeróbico</h3><br>
+                            <p>Duração média do treino: 30 min</p>
+                            <span class="tag">Intensidade Moderada</span>
+                        </div>
+                    </div>
+
+                    <div class="tipo" data-tipo="Musculação">
+                        <div>
+                            <i data-lucide="dumbbell"></i>
+                            <h3>Musculação</h3><br>
+                            <p>Duração média do treino: 50 min</p>
+                            <span class="tag">Intensidade Forte</span>
+                        </div>
+                    </div>
+
+                    <div class="tipo" data-tipo="Ciclismo">
+                        <div>
+                            <i data-lucide="bike"></i>
+                            <h3>Ciclismo</h3><br>
+                            <p>Duração média do treino: 1h30</p>
+                            <span class="tag">Intensidade Forte</span>
+                        </div>
+                    </div>
+
+                    <div class="tipo" data-tipo="FullBody">
+                        <div>
+                            <i data-lucide="user"></i>
+                            <h3>FullBody</h3><br>
+                            <p>Duração média do treino: 45 min</p>
+                            <span class="tag">Intensidade Moderada</span>
+                        </div>
+                    </div>
+
+                    <div class="tipo" data-tipo="FitDance">
+                        <div>
+                            <i data-lucide="music"></i>
+                            <h3>Fit Dance</h3><br>
+                            <p>Duração média do treino: 45 min</p>
+                            <span class="tag">Intensidade Moderada</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <form id="form-treino">
+
+                    <h3>Duração</h3><br>
+                    <label for="duracao"></label>
+                    <input type="text" id="duracao" placeholder="45 minutos">
+                    
+                    <h3>Opsevações</h3><br>
+                    <label for="obs"></label>
+                    <textarea id="obs" placeholder="Observações"></textarea>
+
+                    <input type="hidden" id="tipoSelecionado">
+
+                    <button type="submit">Registrar treino</button>
+                </form>
+                <h2>Histórico de Treinos</h2>
+                <table id="historico">
+                    <thead>
+                        <tr>
+                            <th>Data</th>
+                            <th>Tipo</th>
+                            <th>Duração</th>
+                            <th>Observações</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </section>
+
+        </div>
+    </div>
+
+    <script src="./js/principal.js"></script>
+
+    <!-- Site para Icones: https://icons8.com.br/icons -->
+</body>
+</html>
