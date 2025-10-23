@@ -16,6 +16,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  padding: 40px 20px;
 }
 
 .container {
@@ -38,7 +39,7 @@ body {
 
 .login-box h1 {
   margin-bottom: 25px;
-  font-size: 28px;
+  font-size: 40px;
   font-weight: 600;
 }
 
@@ -50,21 +51,27 @@ body {
 .input-box input {
   width: 100%;
   padding: 12px 40px 12px 15px;
-  border: none;
   border-radius: 25px;
   outline: none;
-  background: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   color: #333;
-  font-size: 14px;
+  font-size: 16px;
+  border: 2px solid rgba(176, 219, 156, 0.5);
 }
 
 .input-box i {
   position: absolute;
   right: 15px;
   top: 50%;
-  transform: translateY(-50%);
+  transform: translateY(+30%);
   color: #555;
   font-size: 18px;
+}
+
+.input:hover {
+  outline: none;
+  border-color: #4a7c59;
+  box-shadow: 0 0 0 3px rgba(74, 124, 89, 0.2);
 }
 
 .options {
@@ -89,10 +96,12 @@ body {
   padding: 12px;
   border: none;
   border-radius: 25px;
-  background: #fff;
+  background-color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
   cursor: pointer; 
   transition: 0.3s;
+  font-size: 18px;
+  padding: 15px 40px;
 }
 
 .btn:hover {
@@ -112,4 +121,14 @@ body {
 
 .register a:hover {
   text-decoration: underline;
+}
+
+.input-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: white;
+    font-size: 14px;
+    text-align: left;
+
 }
