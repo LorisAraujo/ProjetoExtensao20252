@@ -163,15 +163,22 @@ textarea {
 button {
     background-color: #412b6b;
     color: #ddf6d2;
-    border: none;
-    padding: 10px;
+    border: #b0db9c;
+    padding: 10px 20px;
     border-radius: 16px;
     font-size: 16px;
     cursor: pointer;
+    align-items: center;
 }
 
 button:hover {
     background-color: #b0db9c;
+}
+
+
+.button {
+    padding: 20px 10px 10px;
+    align-items: center;
 }
 
 table {
@@ -189,5 +196,10 @@ th, td {
 
 th {
     background-color: #ddf6d2;
+}
+
+a {
+    text-decoration: none;
+    color: #ecfae5
 }
 
