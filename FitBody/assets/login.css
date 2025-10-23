@@ -8,7 +8,7 @@
 }
 
 body {
-  background-image: url('/FitBody/assets/img/fundo.png');
+  background-image: url("/FitBody/assets/img/fundo.png");
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -24,6 +24,10 @@ body {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+.button-container a{
+  text-decoration: none;
+  color: black;
 }
 
 .login-box {
@@ -97,14 +101,19 @@ body {
   border-radius: 25px;
   background-color: rgba(255, 255, 255, 0.8);
   font-weight: 600;
-  cursor: pointer; 
+  cursor: pointer;
   transition: 0.3s;
   font-size: 18px;
   padding: 15px 40px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .btn:hover {
-  background: #f3f3f3;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(74, 124, 89, 0.4);
+}
+.bnt:active {
+  transform: translateY(0);
 }
 
 .register {
@@ -123,11 +132,10 @@ body {
 }
 
 .input-box label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: white;
-    font-size: 14px;
-    text-align: left;
-
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: white;
+  font-size: 14px;
+  text-align: left;
 }
