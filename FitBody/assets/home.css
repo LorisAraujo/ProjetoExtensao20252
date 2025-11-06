@@ -1,4 +1,5 @@
-/* ======== ESTILOS GERAIS ======== */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
 * {
   margin: 0;
   padding: 0;
@@ -7,14 +8,18 @@
 }
 
 body {
-  background: url('fundo.png') no-repeat center center fixed;
+  background: url("/FitBody/assets/img/fundo.png") no-repeat center center fixed;
   background-size: cover;
-  color: #083d2d;
+  background-position: center;
+  background-repeat: repeat-y;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* ======== CABEÇALHO ======== */
 .navbar {
-  background-color: rgba(144, 238, 144, 0.9);
+  background-color: rgba(144, 238, 144);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -23,7 +28,6 @@ body {
   position: sticky;
   top: 0;
   z-index: 1000;
-  border-bottom: 3px solid #1a5c43;
 }
 
 .logo {
@@ -68,8 +72,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background: rgba(255,255,255,0.6);
-  backdrop-filter: blur(6px);
+  background: rgba(176, 219, 156, 0.7);
   border-radius: 20px;
   margin: 40px auto;
   width: 90%;
@@ -91,9 +94,10 @@ body {
 .hero-text button {
   background-color: #1bb382;
   border: none;
-  padding: 12px 25px;
-  border-radius: 8px;
-  font-size: 1rem;
+  padding: 12px 20px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: bold;
   color: white;
   cursor: pointer;
   transition: 0.3s;
@@ -108,7 +112,7 @@ body {
 footer {
   text-align: center;
   padding: 15px;
-  background-color: rgba(144, 238, 144, 0.8);
+  background-color: rgba(144, 238, 144);
   color: #064d35;
   font-weight: 500;
 }

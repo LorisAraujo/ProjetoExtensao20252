@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+
+}
+
+
+
+body {
+    background-image: url("/FitBody/assets/img/fundo.png");
+    background-size: cover; /* Ajusta para cobrir toda a tela */
+    background-position: center; /* Centraliza */
+    background-repeat: repeat-y; /*evita repetição */
+    height: 100vh; /* Faz o fundo ocupar a tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 40px 20px 40px;
+
+}
+
+#chat-container {
+  width: 500px;
+  height: 600px;
+  border: 2px solid #b0db9c;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f8eb;
+}
+
+#chat-header {
+  background-color: #b0db9c;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+#chat-box {
+  flex: 1;
+  padding: 10px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-box .user {
+  align-self: flex-end;
+  background-color: #d1ffd1;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+}
+
+#chat-box .bot {
+  align-self: flex-start;
+  background-color: #b0db9c;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 10px;
+  color: #412b6b;
+}
+
+#user-input {
+  padding: 10px;
+  border: 1px solid #b0db9c;
+  border-radius: 5px;
+  margin: 5px;
+  flex: none;
+}
+
+button {
+  padding: 10px;
+  margin: 5px;
+  border: none;
+  background-color: #ddf6d2 ;
+  color: #412b6b;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b0db9c;
+}
+
+.user, .bot {
+  white-space: pre-line;
+}

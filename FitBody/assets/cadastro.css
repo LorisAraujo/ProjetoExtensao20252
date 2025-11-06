@@ -94,7 +94,7 @@ body {
 
 #botao {
   border: none;
-  padding: 15px 40px;
+  padding: 12px 20px;
   font-size: 18px;
   font-weight: bold;
   border-radius: 40px;
@@ -104,7 +104,7 @@ body {
 }
 
 #botao:hover {
-  transform: translateY(-2px);
+  transform: scale(1.05);
   box-shadow: 0 6px 20px rgba(74, 124, 89, 0.4);
 }
 
