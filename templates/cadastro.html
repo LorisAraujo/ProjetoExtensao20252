@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/css/cadastro.css" />
+    <title>FitBody - Cadastro</title>
+  </head>
+
+  <body>
+    <!-- Container principal do formulário -->
+    <div class="container">
+
+      <!-- Formulário de cadastro -->
+      <form action="/cadastrando" method="post" id="box">
+        <h1>Efetue seu Cadastro</h1>
+        {% set menssagens = get_flashed_messages() %}
+        {% if menssagens %}
+          <div id="alerta" sytle="font-size:20px;">
+            {{menssagens[0]}}
+          </div>
+        {% endif %}
+        <!-- Campo Nome -->
+        <div class="form-group">
+          <label for="nome">Nome</label>
+          <input
+            id="nome"
+            class="input"
+            type="text"
+            name="nome"
+            placeholder="Digite seu nome completo"
+            required
+          />
+        </div>
+
+        <!-- Campo E-mail -->
+        <div class="form-group">
+          <label for="email">E-mail</label>
+          <input
+            id="email"
+            class="input"
+            type="email"
+            name="email"
+            placeholder="Digite seu e-mail"
+            required
+          />
+        </div>
+
+        <!-- Campo Senha -->
+        <div class="form-group password-group">
+          <label for="Senha">Senha</label>
+          <input
+            id="senha"
+            class="input"
+            type="password"
+            name="senha"
+            placeholder="Digite sua senha"
+            required
+          />
+        </div>
+
+        <!-- Campos Peso e Altura lado a lado -->
+        <div id="peso-altura">
+          <div class="form-group">
+            <label for="peso">Peso (kg)</label>
+            <input
+              id="peso"
+              class="input"
+              type="number"
+              name="peso"
+              placeholder="Digite seu peso"
+              min="1"
+              max="300"
+              required
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="altura">Altura (cm)</label>
+            <input
+              id="altura"
+              class="input"
+              type="number"
+              name="altura"
+              placeholder="Digite sua altura"
+              min="50"
+              max="250"
+              required
+            />
+          </div>
+        </div>
+
+        <!-- Campo Idade -->
+        <div class="form-group">
+          <label for="idade">Idade</label>
+          <input
+            id="idade"
+            class="input"
+            type="number"
+            name="idade"
+            placeholder="Coloque sua idade"
+            min="1"
+            max="120"
+            required
+          />
+        </div>
+
+        <!-- Botão de cadastro -->
+        <div class="button-container">
+          <button id="botao" type="submit">Cadastrar</a></button>
+        </div>
+        <!-- Ir para Login-->
+        <div class="login-cta">
+          <p>Já possui uma conta? <a href="/login" style="text-decoration: none;">Login</a></p>
+        </div>
+      </form>
+    </div>
+  </body>
+</html>

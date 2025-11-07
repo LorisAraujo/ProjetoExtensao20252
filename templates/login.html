@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitBody - Login </title>
+    <link rel="stylesheet" href="/static/css/login.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-box">
+        <h1>Entrar</h1>
+        <form action="/acesso" method="post">
+          <div class="input-box">
+            <label for="nome">E-mail</label>
+            <input class="input" type="text" name = "email" placeholder="Usuário" required />
+            <i class="bx bxs-user"></i>
+          </div>
+          <div class="input-box">
+            <label for="Senha">Senha</label>
+            <input class="input" type="password" name="senha" placeholder="Senha" required />
+            <i class="bx bxs-lock-alt"></i>
+          </div>
+
+          <div class="options">
+            <label><input type="checkbox" /> Lembrar de mim</label>
+            <a href="#">Esqueceu a senha?</a>
+          </div>
+          <div class="button-container">
+            <button type="submit" class="btn">Login</button>
+          </div>
+
+          <div class="register">
+            <p>Não tem uma conta? <a href="/cadastro">Cadastre-se</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

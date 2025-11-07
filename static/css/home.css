@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: url("/static/img/fundo.png") no-repeat center center fixed;
+  background-size: cover;
+  background-position: center;
+  background-repeat: repeat-y;
+  height: 100vh;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* ======== CABEÇALHO ======== */
+.navbar {
+  background-color: rgba(144, 238, 144);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 60px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 45px;
+  height: 45px;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.logo h1 {
+  color: #064d35;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #064d35;
+  font-weight: 600;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #1bb382;
+}
+
+/* ======== CONTEÚDO PRINCIPAL ======== */
+.hero {
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background: rgba(176, 219, 156, 0.7);
+  border-radius: 20px;
+  margin: 40px auto;
+  width: 90%;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.hero-text h2 {
+  font-size: 2.3rem;
+  color: #064d35;
+  margin-bottom: 15px;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  margin-bottom: 25px;
+  color: #146d52;
+}
+
+.hero-text button {
+  background-color: #1bb382;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 40px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.hero-text button:hover {
+  background-color: #138a64;
+  transform: scale(1.05);
+}
+
+/* ======== RODAPÉ ======== */
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: rgba(144, 238, 144);
+  color: #064d35;
+  font-weight: 500;
+}
