@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+     font-family: "Poppins", sans-serif;
+
+}
+body {
+    background-image: url(/static/img/fundo.png);
+    background-size: cover; /* Ajusta para cobrir toda a tela */
+    background-position: center; /* Centraliza */
+    background-repeat: repeat-y; /*evita repetição */
+    height: 100vh; /* Faz o fundo ocupar a tela inteira */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 70px 70px;
+
+}
+
+.container {
+    background-color: white;
+    border-radius: 20px;
+    max-width: 600px;
+    width: 100%;
+    padding: 40px 25px 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    text-align: center;
+    margin-top: 200px;
+    
+}
+.topo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px 25px 40px;
+    margin-top: 10px;
+    }
+
+.foto-perfil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.nome {
+    font-size: 22px;
+    font-weight: 700;
+    color: #064d35;
+    margin-bottom: 5px;
+}
+
+.email {
+    color: #555;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+.info {
+    text-align: left;
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+
+.info span {
+    font-weight: bold;
+    color: #064d35;
+}
+
+.metricas {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.card-metrica {
+    background: #e8f1ff;
+    border-radius: 12px;
+    padding: 20px 30px 20px;
+    width: 100px;
+    text-align: center;
+}
+
+.card-metrica h3 {
+    color: #064d35;
+    margin: 5px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.card-metrica p {
+    color: #444;
+    font-size: 13px;
+    margin: 0;
+    text-align: center;
+}
+
+.acoes {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+a {
+    display: block;
+    text-decoration: none;
+    background-color: white;
+    color: #fff;
+    font-weight: 600;
+    padding: 10px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.logout {
+    background-color: #412b6b;
+    border-radius: 40px;
+}
+
+.logout:hover {
+    background-color: #b0db9c;
+}
+
+.rodape {
+    margin-top: 25px;
+    font-size: 13px;
+    color: #777;
+}

@@ -161,7 +161,7 @@ textarea {
 }
 
 button {
-    background-color: #1bb382;
+    background-color: #412b6b;
     color: white;
     border: #b0db9c;
     padding: 10px 20px;
@@ -173,7 +173,7 @@ button {
 }
 
 button:hover {
-    background-color: #138a64;
+    background-color: #b0db9c;
     transform: scale(1.05);
 }
 

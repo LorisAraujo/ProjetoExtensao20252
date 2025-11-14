@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitbody - Página do usuário</title>
+    <link rel="stylesheet" href="/static/css/usuario.css">
+</head>
+<body>
+    <div class="container">
+        <div class="topo">
+            <img src="https://cdn.pixabay.com/photo/2017/06/13/12/53/profile-2398782_1280.png" alt="Foto de perfil" class="foto-perfil">
+            <div class="nome">{{ usuario['nome'] }}</div>
+            <div class="email">{{ usuario['email'] }}</div>
+        </div>
+
+        <div class="info">
+            <p><span>Idade:</span> {{ usuario['idade'] }} anos</p>
+            <p><span>Peso:</span> {{ usuario['peso'] }} kg</p>
+            <p><span>Altura:</span> {{ usuario['altura'] }} cm</p>
+        </div>
+
+        <div class="metricas">
+            <div class="card-metrica">
+                <h3>IMC</h3>
+                <p>
+                {% if usuario['altura'] and usuario['peso'] %}
+                    {{ (usuario['peso'] / ((usuario['altura']/100)**2)) | round(1) }}
+                {% else %}
+                    -
+                {% endif %}
+                </p>
+            </div>
+            <div class="card-metrica">
+                <h3>Meta</h3>
+                <p>70 kg</p>
+            </div>
+            <div class="card-metrica">
+                <h3>Nível</h3>
+                <p>Inciante</p>
+            </div>
+        </div>
+
+        <div class="acoes">
+            <a href="/" class="logout">Sair</a>
+            <a href="/principal" class="logout">Ir para página principal</a>
+            <a href="/chatbot" class="logout">ChatBot FitBody</a>
+            </div>
+
+            <div class="rodape">
+            FitBody • Seu progresso, sua conquista 💪
+        </div>
+    </div>
+</body>
+</html>

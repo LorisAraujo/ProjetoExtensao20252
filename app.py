@@ -59,9 +59,9 @@ def acesso():
     usuario = db.execute('SELECT * FROM usuario WHERE email = ? AND senha = ?', (email, senha)).fetchone()
 
     if usuario:
-        return redirect('/principal')
+        session['usuario_id'] = usuario['id'] # Salvar o ID do usuário logado
+        return redirect('/usuario')
     else: 
-        flash('nome e/ou senha invalidos, tente novamente!')
         return redirect ('/login')
 
 @app.route("/cadastro")
@@ -70,7 +70,15 @@ def cadastro():
 
 @app.route("/principal")
 def principal():
+
     return render_template('principal.html')
+
+@app.route("/usuario")
+def usuario():
+    usuario_id = session['usuario_id']
+    db = get_db()
+    usuario = db.execute('SELECT * FROM usuario WHERE id = ?', (usuario_id,)).fetchone()
+    return render_template('usuario.html', usuario=usuario)
 
 @app.route("/login")
 def login_acesso():
