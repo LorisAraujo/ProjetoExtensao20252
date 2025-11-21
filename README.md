@@ -1,6 +1,9 @@
-#FitBody 
-##Projeto de Extensão 
-###Visão Geral 
+# FitBody
+
+## Projeto de Extensão 
+
+### Visão Geral 
+
 O FitBody é uma aplicação web cujo principal objetivo é funcionar como uma agenda pessoal,
 permitindo que o usuário registre seus treinos ao longo do tempo. O projeto foi 
 desenvolvido como parte da disciplina de Projeto de Extensão do curso de 
@@ -10,14 +13,14 @@ A aplicação foi construída utilizando Python para criação de
 um mini banco de dados destinado ao cadastro de usuários, 
 além de HTML, CSS e JavaScript para o desenvolvimento do frontend
 
-###Tecnologias utilizadas
+### Tecnologias utilizadas
 - Pyhton
 - SQLite
 - HTML
 - CSS
 - JavaScript
 
-###Grupo 
+### Grupo 
 - Alisson Vinicius
 - João Carlos Peres Teles
 - Kaue Lucas
