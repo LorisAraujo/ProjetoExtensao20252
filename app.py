@@ -34,7 +34,9 @@ def create_table():
             senha TEXT NOT NULL,
             peso REAL,
             altura REAL,
-            idade INTEGER
+            idade INTEGER,
+            metapeso REAL,
+            nivel TEXT
         )
     """)
 
@@ -62,6 +64,7 @@ def acesso():
         session['usuario_id'] = usuario['id'] # Salvar o ID do usuário logado
         return redirect('/usuario')
     else: 
+        flash("login e/ou senha incorreta!")
         return redirect ('/login')
 
 @app.route("/cadastro")
@@ -78,7 +81,7 @@ def usuario():
     usuario_id = session['usuario_id']
     db = get_db()
     usuario = db.execute('SELECT * FROM usuario WHERE id = ?', (usuario_id,)).fetchone()
-    return render_template('usuario.html', usuario=usuario)
+    return render_template('usuario.html', usuario=usuario, metapeso=usuario['metapeso'], nivel=usuario['nivel'])
 
 @app.route("/login")
 def login_acesso():
@@ -93,13 +96,22 @@ def cadastrando():
     peso=request.form.get('peso')
     altura=request.form.get('altura')
     idade=request.form.get('idade')
+    metapeso=request.form.get('metapeso')
+    nivel=request.form.get('nivel')
 
     # iniciando a conecção com o banco de dados 
     db = get_db()
 
+    # verifica se o e-mail já existe 
+    usuario = db.execute('SELECT * FROM usuario WHERE email = ?', (email,)).fetchone()
+    
+    if usuario:
+        flash("Esse e-mail já está cadastrado!")
+        return redirect('/cadastro')
+
     db.execute("""
-        INSERT INTO usuario (nome, email, senha, peso, altura, idade) VALUES (?, ?, ?, ?, ?, ?)
-    """, (nome, email, senha, peso, altura, idade ))
+        INSERT INTO usuario (nome, email, senha, peso, altura, idade, metapeso, nivel) VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+    """, (nome, email, senha, peso, altura, idade, metapeso, nivel))
 
     db.commit()
 

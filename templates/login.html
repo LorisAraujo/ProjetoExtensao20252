@@ -15,6 +15,9 @@
       <div class="login-box">
         <h1>Entrar</h1>
         <form action="/acesso" method="post">
+          {% for mensagem in get_flashed_messages() %}
+            <div class="flash">{{ mensagem }}</div>
+          {% endfor %}
           <div class="input-box">
             <label for="nome">E-mail</label>
             <input class="input" type="text" name = "email" placeholder="Usuário" required />

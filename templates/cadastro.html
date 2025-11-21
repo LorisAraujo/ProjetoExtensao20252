@@ -80,7 +80,7 @@
             <input
               id="altura"
               class="input"
-              type="number"
+              type="text"
               name="altura"
               placeholder="Digite sua altura"
               min="50"
@@ -91,14 +91,44 @@
         </div>
 
         <!-- Campo Idade -->
+        <br>
+        <div id="idade-meta">
+          <div class="form-group">
+            <label for="idade">Idade</label>
+            <input
+              id="idade"
+              class="input"
+              type="number"
+              name="idade"
+              placeholder="Coloque sua idade"
+              min="1"
+              max="120"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="meta_peso">Meta de peso (kg)</label>
+            <input
+              id="metapeso"
+              class="input"
+              type="number"
+              name="metapeso"
+              placeholder="Coloque sua meta"
+              min="1"
+              max="120"
+              required
+            />
+          </div>
+        </div>
+        <br>
         <div class="form-group">
-          <label for="idade">Idade</label>
+          <label for="nivel">Nivel</label>
           <input
-            id="idade"
+            id="nivel"
             class="input"
-            type="number"
-            name="idade"
-            placeholder="Coloque sua idade"
+            type="text"
+            name="nivel"
+            placeholder="Coloque seu nivel de treino"
             min="1"
             max="120"
             required
@@ -106,8 +136,9 @@
         </div>
 
         <!-- Botão de cadastro -->
+        
         <div class="button-container">
-          <button id="botao" type="submit">Cadastrar</button>
+          <button id="botao" type="submit" >Cadastrar</button>
         </div>
         <!-- Ir para Login-->
         <div class="login-cta">
@@ -115,5 +146,6 @@
         </div>
       </form>
     </div>
+
   </body>
 </html>

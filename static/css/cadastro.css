@@ -81,6 +81,18 @@ body {
 #peso-altura .form-group {
   flex: 1;
   margin-bottom: 0;
+ 
+}
+
+#idade-meta {
+  display: flex;
+  gap: 15px;
+  align-items: flex-start; 
+}
+
+#idade-meta .form-group {
+  flex: 1;
+  margin-bottom: 0;
 }
 
 .button-container {
@@ -132,4 +144,8 @@ body {
 .login-cta a:hover,
 .login-cta a:focus {
   text-decoration: underline;
+}
+
+#alerta {
+  color: white;
 }

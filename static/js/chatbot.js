@@ -64,7 +64,7 @@ function getBotReply(message) {
 }
 
 function comprimentos () {
-  return  userName+ "! Posso te ajuda com treinos de musculação, treinos de corrida e dietas, qual dos dois tem interessa? Para facilitar a nossa comunicação poderia resumir suas perguntas/respostas a uma ou duas palavras! "
+  return  userName+ "! Posso te ajuda com treinos de musculação, treinos de corrida e dietas, qual dos três tem interessa? Para facilitar a nossa comunicação poderia resumir suas perguntas/respostas a uma ou duas palavras! "
 }
 
 function feminino(message) {
